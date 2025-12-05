@@ -20,8 +20,8 @@
 
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            color: #1f2933;
-            background-color: #f5f7fa;
+            color: rosybrown;
+            background-color: white;
             line-height: 1.6;
         }
 
@@ -69,14 +69,14 @@
         }
 
         .nav-links a:hover {
-            border-bottom-color: #3b82f6;
+            border-bottom-color: sienna;
         }
 
         .btn-primary {
             display: inline-block;
             padding: 0.75rem 1.4rem;
             border-radius: 999px;
-            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            background: linear-gradient(135deg, blanchedalmond, sienna);
             color: white;
             font-weight: 500;
             font-size: 0.95rem;
@@ -98,8 +98,8 @@
         footer {
             margin-top: 3rem;
             padding: 2rem 0 1rem;
-            background: #111827;
-            color: #e5e7eb;
+            background: black;
+            color: blanchedalmond;
         }
 
         .footer-top {
@@ -109,7 +109,7 @@
             justify-content: space-between;
             align-items: flex-start;
             padding-bottom: 1.5rem;
-            border-bottom: 1px solid #374151;
+            border-bottom: 1px solid snow;
         }
 
         .footer-column h4 {
@@ -131,7 +131,7 @@
         }
 
         .footer-links a:hover {
-            color: #ffffff;
+            color: blanchedalmond;
         }
 
         .social-icons {
@@ -144,25 +144,25 @@
             width: 34px;
             height: 34px;
             border-radius: 999px;
-            border: 1px solid #4b5563;
+            border: 1px solid snow;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             font-size: 0.9rem;
-            color: #e5e7eb;
+            color: blanchedalmond;
         }
 
         .social-icon:hover {
-            background: #e5e7eb;
-            color: #111827;
+            background: blanchedalmond;;
+            color: snow;
         }
 
         .footer-bottom {
             text-align: center;
             margin-top: 1rem;
             font-size: 0.8rem;
-            color: #6b7280;
-        }
+            color:blanchedalmond;
+        }e5e7eb
 
         /* Sections génériques */
         section {
@@ -176,7 +176,7 @@
 
         .section-subtitle {
             font-size: 0.95rem;
-            color: #6b7280;
+            color: sienna;
         }
 
         /* Responsive */
@@ -204,7 +204,7 @@
         <nav class="nav">
             <div class="logo">
                 <!-- Logo / Nom du site -->
-                MonSite<span style="color:#3b82f6;">Pro</span>
+                Café<span style="color:blanchedalmond;">L</span>
             </div>
             <div class="nav-links">
                 <!-- Rappel navigation header (liens vers les pages principales) -->
@@ -227,8 +227,8 @@
     <div class="container">
         <div class="footer-top">
             <div class="footer-column">
-                <h4>MonSitePro</h4>
-                <p style="font-size:0.9rem; color:#9ca3af;">
+                <h4>CaféL</h4>
+                <p style="font-size:0.9rem; color:blanchedalmond;">
                     Un exemple de site vitrine moderne avec Wagtail.
                 </p>
             </div>
@@ -243,21 +243,45 @@
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
             </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café L</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Ton CSS principal -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Contenu de ton site -->
 
-            <div class="footer-column">
-                <h4>Suivez-nous</h4>
-                <p style="font-size:0.9rem; color:#9ca3af;">Retrouvez-nous sur les réseaux sociaux :</p>
-                <div class="social-icons">
-                    <!-- Icônes sociales simples (texte pour l'exemple) -->
-                    <a href="#" class="social-icon" aria-label="Facebook">F</a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
-                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+    <footer>
+        <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <p style="font-size:0.9rem; color:#9ca3af;">Retrouvez-nous sur les réseaux sociaux :</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/cafelparis" target="_blank" aria-label="Facebook" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/cafe-l" target="_blank" aria-label="LinkedIn" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/cafe_l_paris" target="_blank" aria-label="Instagram" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            &copy; {% now "Y" %} MonSitePro · Tous droits réservés.
+            &copy; {% now "Y" %} CaféL · Tous droits réservés.
         </div>
     </div>
 </footer>
