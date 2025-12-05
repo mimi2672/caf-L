@@ -1,2 +1,7 @@
 Django>=5.2,<5.3
 wagtail>=7.2,<7.3
+gunicorn
+whitenoise
+
+psycopg[binary]
+Pillow
